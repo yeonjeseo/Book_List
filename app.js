@@ -49,7 +49,7 @@ UI.prototype.deleteBook = function(target) {
 }
 
 // Clear Field
-UI.prototype.clearField = function () {
+UI.prototype.clearFields = function () {
   document.getElementById("title").value = "";
   document.getElementById("author").value = "";
   document.getElementById("isbn").value = "";
@@ -78,7 +78,7 @@ document.getElementById("book-form").addEventListener("submit", function (e) {
     // Show success
     ui.showAlert("Book Added!", "success");
     // Clear field
-    ui.clearField();
+    ui.clearFields();
   }
 
   e.preventDefault();
